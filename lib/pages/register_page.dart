@@ -53,8 +53,6 @@ class _RegisterPageState extends State<RegisterPage> {
       return; // Detiene la ejecución después de manejar el error
     }
 
-    // Cierra el indicador de progreso
-    Navigator.pop(context);
     // Navega a la pantalla de inicio de sesión o muestra un mensaje de éxito
     mostrarDialogoRegistroExitoso();
   }
@@ -94,7 +92,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const SizedBox(height: 50),
-                  Icono(),
+                  const Icono(),
                   const SizedBox(height: 50),
                   Text(
                     'Create una cuenta',

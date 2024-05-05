@@ -1,10 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:login/componentes/my_drawer.dart';
+import '../componentes/my_drawer.dart';
 
-class HomePage extends StatelessWidget {
-  HomePage({super.key});
-
+class AddMulta extends StatelessWidget {
+  AddMulta({super.key});
   final user = FirebaseAuth.instance.currentUser;
 
   @override
@@ -14,14 +13,12 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: const Center(
+            child: Text(
+          "Añadir Multa",
+        )),
       ),
       drawer: const MyDrawer(),
-      body: Center(
-        child: Text(
-          "Bienvenido:${user!.email!}",
-          style: const TextStyle(fontSize: 20),
-        ),
-      ),
     );
   }
 }

@@ -64,9 +64,12 @@ class _PaginadeRestablecerPasswordState
     );
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.background,
+      ),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -74,7 +77,7 @@ class _PaginadeRestablecerPasswordState
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(height: 50),
-                Icono(),
+                const Icono(),
                 const SizedBox(height: 50),
                 Text(
                   'Ingresa tu correo electrónico registrado:',

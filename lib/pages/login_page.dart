@@ -34,7 +34,6 @@ class _LoginPageState extends State<LoginPage> {
           email: emailController.text, password: passwordController.text);
       Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
-      // ignore: use_build_context_synchronously
       Navigator.pop(context);
       if (e.code == 'user-not-found') {
         wrongEmailMessage();
@@ -86,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const SizedBox(height: 50),
-                  Icono(),
+                  const Icono(),
                   const SizedBox(height: 50),
                   Text(
                     'Bienvenido',
@@ -119,7 +118,7 @@ class _LoginPageState extends State<LoginPage> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) {
-                                  return PaginadeRestablecerPassword();
+                                  return const PaginadeRestablecerPassword();
                                 },
                               ),
                             );
