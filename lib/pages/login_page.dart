@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:login/componentes/icon.dart';
 import 'package:login/componentes/my_textfield.dart';
 import 'package:login/componentes/signin_button.dart';
-import 'package:login/componentes/square_tile.dart';
 import 'package:login/pages/olvide_contra_page.dart';
 
 class LoginPage extends StatefulWidget {
