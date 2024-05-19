@@ -170,12 +170,12 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                   const SizedBox(height: 50),
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SquareTile(),
-                    ],
-                  ),
+                  // const Row(
+                  //   mainAxisAlignment: MainAxisAlignment.center,
+                  //   children: [
+                  //     SquareTile(),
+                  //   ],
+                  // ),
                   const SizedBox(height: 50),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
